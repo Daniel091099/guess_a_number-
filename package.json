@@ -1,0 +1,22 @@
+{
+  "name": "guess_a_number-",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Daniel091099/guess_a_number-.git"
+  },
+  "author": "Daniel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Daniel091099/guess_a_number-/issues"
+  },
+  "homepage": "https://github.com/Daniel091099/guess_a_number-#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
