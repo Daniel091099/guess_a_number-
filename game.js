@@ -1,5 +1,5 @@
 const prompt = require('prompt-sync')();
-const { target } = require('./randonnumber');
+const { start, askLevel } = require('./message');
 
 function rounds(number, target) {
   if (number === target) {
@@ -12,15 +12,14 @@ function rounds(number, target) {
   return false;
 }
 
-function backstage(target) {
+function backstage(target, tries) {
   let attempts = 0;
   let win = false;
 
-  while (attempts < 5 && win === false) {
+  while (attempts < tries && win === false) {
     let number = prompt('What is the number? ');
     console.log(number, 'you said');
     win = rounds(Number(number), target);
-    console.log('🚀 ~ file: game.js:25 ~ backstage ~ win', win);
     attempts++;
     console.log(attempts);
   }
